@@ -8,9 +8,9 @@ All slides are in deckJS/presentations
 Some useful scripts
 
 ### Python
-	* Script to remove urls of being crawled bulk. Web only allows one by one...
+* Script to remove urls of being crawled bulk. Web only allows one by one...
 
 
 ### Groovy
-	* Script to make HTTP request. POST AND GET
-	* Script to interact with SalesForce API Rest
+* Script to make HTTP request. POST AND GET
+* Script to interact with SalesForce API Rest
