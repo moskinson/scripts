@@ -1,0 +1,11 @@
+{
+    "name": "unience-feeds-api",
+    "description": "Unience Feeds API",
+    "version": "0.0.1",
+    "private": true,
+    "dependencies": {
+        "express": "*",
+        "mongodb": "*",
+        "socket.io": "*"
+    }
+}
