@@ -1,7 +1,7 @@
 
 ##  Slides
 
-All slides are in deckJS/presentations
+Done with [http://imakewebthings.com/deck.js/](deckJS). Look into slides/presentations
 
 ## Scripts
 
