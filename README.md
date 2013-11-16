@@ -1,7 +1,7 @@
 
 ##  Slides
 
-Done with [http://imakewebthings.com/deck.js/](deckJS). Look into slides/presentations
+Done with [deckJS](http://imakewebthings.com/deck.js/). Look into slides/presentations
 
 ## Scripts
 
