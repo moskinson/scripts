@@ -55,17 +55,19 @@ if __name__ == '__main__':
     response = browser.open(wmt_url)
     browser.select_form(nr=0)
     browser['Email'] = args.login
+    response = browser.submit()
+    browser.select_form(nr=0)
     browser['Passwd'] = args.password
     response = browser.submit()
 
     with open(args.file, 'r') as f:
         content = f.read().splitlines()
         for url_to_remove in content:
-          delete = "https://www.google.com/webmasters/tools/removals-request?hl=en&siteUrl="+ args.domain + "&urlt=" + url_to_remove
+          delete = "https://www.google.com/webmasters/tools/removals-request?hl=en&siteUrl="+ args.domain + "&urlt=" + args.domain + url_to_remove
           browser.open(delete)
           browser.select_form(nr=0)
           form = browser.form
-#        form.find_control("removalmethod").get("PAGE_CACHE").selected=True
+          form.find_control("removalmethod").get("PAGE").selected=True
           response = browser.submit()
           print "submitted %s, %s" % (url_to_remove,response.code)
           sleep(2)
